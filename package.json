@@ -1,0 +1,42 @@
+{
+  "name": "cucumber-steps",
+  "version": "0.0.1",
+  "description": "Quick start for testing with cucumber",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "npm run compile",
+    "compile": "babel src/ -d dist/",
+    "lint": "eslint src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Brainhub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brainhubeu/cucumber-steps.git"
+  },
+  "keywords": [
+    "testing",
+    "bdd",
+    "cucumber",
+    "cucumber-js",
+    "gherkin",
+    "tests",
+    "webdriver",
+    "phantomjs",
+    "selenium"
+  ],
+  "engines": {
+    "node": ">= 4"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brainhubeu/cucumber-steps/issues"
+  },
+  "homepage": "https://github.com/brainhubeu/cucumber-steps#readme",
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-brainhub": "^1.5.0"
+  }
+}
