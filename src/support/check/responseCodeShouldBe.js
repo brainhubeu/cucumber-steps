@@ -1,4 +1,4 @@
-import { expect } from '../../../tests/chai';
+import { expect } from '../../tests/chai';
 
 /**
  * response status code should be {statusCode}

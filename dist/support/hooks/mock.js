@@ -10,7 +10,7 @@ var _Client = require('../../../src/Client');
 
 var _Client2 = _interopRequireDefault(_Client);
 
-var _mock = require('../../../tests/mock');
+var _mock = require('../../tests/mock');
 
 var _mock2 = _interopRequireDefault(_mock);
 

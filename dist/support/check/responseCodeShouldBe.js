@@ -10,7 +10,7 @@ exports.default = function (statusCode) {
   return (0, _chai.expect)(this.lastResponse.status, message).to.be.equal(statusCode);
 };
 
-var _chai = require('../../../tests/chai');
+var _chai = require('../../tests/chai');
 
 ;
 

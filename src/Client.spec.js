@@ -1,6 +1,6 @@
 import Client from './Client';
 import sinon from 'sinon';
-import { expect } from '../tests/chai';
+import { expect } from './tests/chai';
 
 describe('Client', () => {
   it('makes a GET request', () => {

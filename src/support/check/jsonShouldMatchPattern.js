@@ -1,4 +1,4 @@
-import { expect } from '../../../tests/chai';
+import { expect } from '../../tests/chai';
 const INDENT = '    ';
 
 /**

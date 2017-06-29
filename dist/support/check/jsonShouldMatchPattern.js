@@ -15,7 +15,7 @@ exports.default = function (pattern) {
   return (0, _chai.expect)(this.lastResponse.body, message).to.be.like(json);
 };
 
-var _chai = require('../../../tests/chai');
+var _chai = require('../../tests/chai');
 
 const INDENT = '    ';
 
