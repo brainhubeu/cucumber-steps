@@ -11,3 +11,11 @@ exports.default = function (statusCode) {
 };
 
 var _chai = require('../../tests/chai');
+
+;
+
+/**
+ * response status code should be {statusCode}
+ * @param {number} statusCode
+ * @returns {Promise}
+ */
