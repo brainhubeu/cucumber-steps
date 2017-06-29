@@ -19,7 +19,7 @@ var _then2 = _interopRequireDefault(_then);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = ({ Given, When, Then }) => {
-  (0, _given2.default)(Given);
-  (0, _when2.default)(When);
-  (0, _then2.default)(Then);
+  (0, _given2.default)({ Given });
+  (0, _when2.default)({ When });
+  (0, _then2.default)({ Then });
 };
