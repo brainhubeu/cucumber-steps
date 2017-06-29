@@ -1,5 +1,5 @@
-import responseCodeShouldBe from '../../features/support/check/responseCodeShouldBe';
-import jsonShouldMatchPattern from '../../features/support/check/jsonShouldMatchPattern';
+import responseCodeShouldBe from '../support/check/responseCodeShouldBe';
+import jsonShouldMatchPattern from '../support/check/jsonShouldMatchPattern';
 
 export default function({ Then }) {
   Then('the response code should be {int}', responseCodeShouldBe);

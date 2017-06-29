@@ -1,5 +1,5 @@
-import sendRequestTo from '../../features/support/action/sendRequestTo';
-import sendRequestToWithBody from '../../features/support/action/sendRequestToWithBody';
+import sendRequestTo from '../support/action/sendRequestTo';
+import sendRequestToWithBody from '../support/action/sendRequestToWithBody';
 
 export default function({ When }) {
   When('I send a {string} request to {stringInDoubleQuotes}', sendRequestTo);
