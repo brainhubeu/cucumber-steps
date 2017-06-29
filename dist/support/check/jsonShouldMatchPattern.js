@@ -22,5 +22,6 @@ const INDENT = '    ';
 /**
  * json should match pattern {pattern}
  * @param {string} pattern Json in string to match
- * @return {Boolean} validates if expectation is fulfilled
+ * @returns {Promise}
  */
+;
