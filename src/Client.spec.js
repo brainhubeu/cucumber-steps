@@ -75,7 +75,7 @@ describe('Client', () => {
     superagent
       .get.withArgs('http://example.com/path')
       .returns(request);
-    
+
     const client = new Client(superagent);
     client.setHost('http://example.com');
     client.setHeader('Accept', 'application/json');

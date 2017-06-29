@@ -1,8 +1,4 @@
 import { defineSupportCode } from 'cucumber';
-import responseCodeShouldBe from '../support/check/responseCodeShouldBe';
-import jsonShouldMatchPattern from '../support/check/jsonShouldMatchPattern';
+import then from '../../src/supportCode/then';
 
-defineSupportCode(function({ Then }) {
-  Then('the response code should be {int}', responseCodeShouldBe);
-  Then('the JSON should match pattern', jsonShouldMatchPattern);
-});
+defineSupportCode(then);
