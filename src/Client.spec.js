@@ -66,25 +66,23 @@ describe('Client', () => {
   it('sets headers', () => {
     const superagent = {
       get: sinon.stub(),
+    };
+    const request = {
       set: sinon.spy(),
+      then: () => Promise.resolve(),
     };
 
     superagent
       .get.withArgs('http://example.com/path')
-      .returns(Promise.resolve({
-        body: {
-          property: 'value',
-        },
-        status: 200,
-      }));
-
+      .returns(request);
+    
     const client = new Client(superagent);
     client.setHost('http://example.com');
     client.setHeader('Accept', 'application/json');
 
     return client.get('/path')
       .then((response) => {
-        expect(superagent.set.withArgs('Accept', 'application/json')).to.have.been.calledOnce;
+        expect(request.set.withArgs('Accept', 'application/json')).to.have.been.calledOnce;
       })
   })
 });
