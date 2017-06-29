@@ -7,7 +7,7 @@
     "prepublish": "npm run build",
     "build": "babel src/ -d dist/",
     "lint": "eslint src/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/cucumberjs --compiler=js:babel-register"
   },
   "author": {
     "name": "Brainhub"
@@ -37,9 +37,12 @@
   "homepage": "https://github.com/brainhubeu/cucumber-steps#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-preset-latest": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "cucumber": "^2.3.1",
     "eslint": "^4.0.0",
-    "eslint-config-brainhub": "^1.5.0"
+    "eslint-config-brainhub": "^1.5.0",
+    "selenium-standalone": "^6.5.0",
+    "webdriverio": "^4.8.0"
   }
 }
