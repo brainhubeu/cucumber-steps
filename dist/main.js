@@ -4,15 +4,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _given = require('supportCode/given');
+var _given = require('./supportCode/given');
 
 var _given2 = _interopRequireDefault(_given);
 
-var _when = require('supportCode/when');
+var _when = require('./supportCode/when');
 
 var _when2 = _interopRequireDefault(_when);
 
-var _then = require('supportCode/then');
+var _then = require('./supportCode/then');
 
 var _then2 = _interopRequireDefault(_then);
 
