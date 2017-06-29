@@ -1,5 +1,9 @@
 {
   "root": true,
+  "env": {
+    "node": true,
+    "jasmine": true
+  },
   "extends": [
     "brainhub"
   ],
@@ -7,5 +11,9 @@
     "import/resolve": {
       "moduleDirectory": ["node_modules", "src"]
     }
+  },
+  "rules": {
+    "new-cap": ["error", { "capIsNewExceptions": ["Before", "Then", "Given", "When"] }],
+    "no-invalid-this": ["warn"]
   }
 }

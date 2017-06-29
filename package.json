@@ -6,7 +6,8 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "babel src/ -d dist/",
-    "lint": "eslint src/",
+    "lint": "./node_modules/.bin/eslint features/ src/",
+    "lint-fix": "eslint features/ src/ --fix",
     "test": "./node_modules/.bin/mocha -r babel-register src/**.spec.js && ./node_modules/.bin/cucumberjs --compiler=js:babel-register"
   },
   "author": {
@@ -43,8 +44,10 @@
     "chai": "^4.0.2",
     "chai-like": "^0.2.14",
     "cucumber": "^2.3.1",
-    "eslint": "^4.0.0",
+    "eslint": "^4.1.1",
     "eslint-config-brainhub": "^1.5.0",
+    "eslint-plugin-cucumber": "^0.1.0",
+    "eslint-plugin-mocha": "^4.11.0",
     "express": "^4.15.3",
     "mocha": "^3.4.2",
     "selenium-standalone": "^6.5.0",

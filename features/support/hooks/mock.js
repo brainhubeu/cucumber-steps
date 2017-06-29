@@ -3,17 +3,11 @@ import superagent from 'superagent';
 import Client from '../../../src/Client';
 import application from '../../../src/tests/mock';
 
-defineSupportCode(function({After, Before}) {
-  Before(function (scenarioResult) {
-    const world = this;
-    world.application = application;
-
-    return world.application.then((listener) => {
-      world.client = new Client(superagent);
-      world.client.setHost('http://localhost:' + listener.address().port);
-    })
-  });
-
-  After(function () {
+defineSupportCode(function({ Before }) {
+  Before(function(scenarioResult) {
+    return application.then(listener => {
+      this.client = new Client(superagent);
+      this.client.setHost('http://localhost:' + listener.address().port);
+    });
   });
 });

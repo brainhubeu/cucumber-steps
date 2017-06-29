@@ -7,4 +7,4 @@ chai.use(sinonChai);
 chai.use(like);
 like.extend(matcherPlugin);
 
-export { expect }
+export { expect };

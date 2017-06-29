@@ -31,7 +31,7 @@ export default class Client {
   }
 
   addRequestHeaders(request) {
-    Object.keys(this.headers).map((name) => {
+    Object.keys(this.headers).map(name => {
       request.set(name, this.headers[name]);
     });
   }

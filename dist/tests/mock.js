@@ -18,11 +18,11 @@ exports.default = new Promise(resolve => {
   const application = (0, _express2.default)();
   application.use(_bodyParser2.default.json()).get('/api/users/2', (req, res) => {
     res.json({
-      "data": {
+      data: {
         id: 2,
-        first_name: "lucille",
-        last_name: "bluth",
-        avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
+        firstName: 'lucille',
+        lastName: 'bluth',
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg'
       }
     });
   }).post('/api/users', (req, res) => {

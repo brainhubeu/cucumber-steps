@@ -6,4 +6,4 @@ export default ({ Given, When, Then }) => {
   givenSupportCode({ Given });
   whenSupportCode({ When });
   thenSupportCode({ Then });
-}
+};

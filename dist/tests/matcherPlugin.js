@@ -15,12 +15,12 @@ var _matchers2 = _interopRequireDefault(_matchers);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _chaiLike2.default.extend({
-  match: function (object, expected) {
+  match(object, expected) {
     const validType = typeof object === 'string' || typeof object === 'number';
 
     return validType && Object.keys(_matchers2.default).includes(expected);
   },
-  assert: function (object, expected) {
+  assert(object, expected) {
     return _matchers2.default[expected](object);
   }
 });
