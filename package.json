@@ -2,7 +2,7 @@
   "name": "cucumber-steps",
   "version": "0.0.1",
   "description": "Quick start for testing with cucumber",
-  "main": "dist/index.js",
+  "main": "dist/main.js",
   "scripts": {
     "prepublish": "npm run build",
     "build": "babel src/ -d dist/",
