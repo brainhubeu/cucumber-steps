@@ -1,12 +1,12 @@
-module.exports = function () {
-  this.When('I am on', function (path) {
-    // Write code here that turns the phrase above into concrete actions
-    console.log(path);
-    return Promise.resolve();
+import { defineSupportCode } from 'cucumber';
+import assert from 'assert';
+
+defineSupportCode(function({Then, When}) {
+  Then('I am on {stringInDoubleQuotes}', function (path) {
+    return Promise.resolve('pending');
   });
 
-  this.Then('I should see {stringInDoubleQuotes}', function (stringInDoubleQuotes, callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
+  Then('I should see {string}', function (string) {
+    return Promise.resolve('pending');
   });
-}
+});

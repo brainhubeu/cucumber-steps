@@ -5,5 +5,5 @@ Feature: First feature
   In order to prove cucumber
 
   Scenario:
-    When I am on
+    When I am on "/search?q=brainhub"
     Then I should see "Brainhub: Node.js and mobile development team"
