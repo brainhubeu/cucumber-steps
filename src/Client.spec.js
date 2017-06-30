@@ -20,18 +20,18 @@ describe('Client', () => {
     client.setHost('http://example.com');
 
     return client.get('/custom-path')
-      .then((response) => {
-         expect(response.body).to.be.like({
-           'property': 'value',
-         });
-         expect(response.status).to.be.equal(200);
+      .then(response => {
+        expect(response.body).to.be.like({
+          property: 'value',
+        });
+        expect(response.status).to.be.equal(200);
       });
   });
 
   it('makes a POST request', () => {
     const body = {
-      'property': 'value',
-      'other': 'value',
+      property: 'value',
+      other: 'value',
     };
     const superagent = {
       post: sinon.stub(),
@@ -55,13 +55,13 @@ describe('Client', () => {
     client.setHost('http://example.com');
 
     return client.post('/custom-path', body)
-      .then((response) => {
+      .then(response => {
         expect(response.body).to.be.like({
-          'property': 'value',
+          property: 'value',
         });
         expect(response.status).to.be.equal(201);
       });
-  })
+  });
 
   it('sets headers', () => {
     const superagent = {
@@ -81,8 +81,8 @@ describe('Client', () => {
     client.setHeader('Accept', 'application/json');
 
     return client.get('/path')
-      .then((response) => {
+      .then(response => {
         expect(request.set.withArgs('Accept', 'application/json')).to.have.been.calledOnce;
-      })
-  })
+      });
+  });
 });

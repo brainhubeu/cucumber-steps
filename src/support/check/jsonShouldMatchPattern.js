@@ -4,9 +4,9 @@ const INDENT = '    ';
 /**
  * json should match pattern {pattern}
  * @param {string} pattern Json in string to match
- * @returns {Promise}
+ * @return {Boolean} validates if expectation is fulfilled
  */
-export default function (pattern) {
+export default function(pattern) {
   const json = JSON.parse(pattern);
   const message = `Expect response body to match pattern:
   ${pattern}
@@ -15,4 +15,4 @@ export default function (pattern) {
   `;
 
   return expect(this.lastResponse.body, message).to.be.like(json);
-};
+}

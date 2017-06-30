@@ -12,8 +12,8 @@ Feature: First feature
     {
         "data": {
             "id": 2,
-            "first_name": "lucille",
-            "last_name": "bluth",
+            "firstName": "lucille",
+            "lastName": "bluth",
             "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
         }
     }
