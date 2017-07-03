@@ -1,0 +1,27 @@
+machine:
+
+  timezone:
+    Europe/Warsaw # Set the timezone
+
+  # Version of node to use
+  node:
+    version: 8.1.3
+
+  # Override /etc/hosts
+  hosts:
+    circlehost: 127.0.0.1
+
+  # Add some environment variables
+  environment:
+    NODE_ENV: 'production'
+
+## Customize dependencies
+dependencies:
+
+  override:
+    - npm --production=false install
+
+## Customize test commands
+test:
+  override:
+    - npm run test
