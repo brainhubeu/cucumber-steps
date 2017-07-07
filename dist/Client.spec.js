@@ -29,7 +29,7 @@ describe('Client', () => {
 
     return client.get('/custom-path').then(response => {
       (0, _chai.expect)(response.body).to.be.like({
-        'property': 'value'
+        property: 'value'
       });
       (0, _chai.expect)(response.status).to.be.equal(200);
     });
@@ -37,8 +37,8 @@ describe('Client', () => {
 
   it('makes a POST request', () => {
     const body = {
-      'property': 'value',
-      'other': 'value'
+      property: 'value',
+      other: 'value'
     };
     const superagent = {
       post: _sinon2.default.stub()
@@ -61,7 +61,7 @@ describe('Client', () => {
 
     return client.post('/custom-path', body).then(response => {
       (0, _chai.expect)(response.body).to.be.like({
-        'property': 'value'
+        property: 'value'
       });
       (0, _chai.expect)(response.status).to.be.equal(201);
     });

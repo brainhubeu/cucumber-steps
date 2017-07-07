@@ -4,19 +4,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  '@date@': value => {
-    return !Number.isNaN(Date.parse(value));
-  },
-  '@integer@': value => {
-    return Number.parseInt(value, 10).toString() === String(value);
-  },
-  '@string@': value => {
-    return typeof value === 'string';
-  },
-  '@object@': value => {
-    return typeof value === 'object';
-  },
-  '@array@': value => {
-    return Array.isArray(value);
-  }
+  '@date@': value => !Number.isNaN(Date.parse(value)),
+  '@integer@': value => Number.parseInt(value).toString() === String(value),
+  '@string@': value => typeof value === 'string',
+  '@object@': value => typeof value === 'object',
+  '@array@': value => Array.isArray(value)
 };

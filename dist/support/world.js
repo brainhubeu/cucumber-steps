@@ -2,9 +2,10 @@
 
 var _cucumber = require('cucumber');
 
-var _webdriverio = require('webdriverio');
-
-function CustomWorld(callback) {}
+function CustomWorld(callback) {
+  // A custom world placeholder function
+  return callback;
+}
 
 (0, _cucumber.defineSupportCode)(function ({ setWorldConstructor }) {
   setWorldConstructor(CustomWorld);
