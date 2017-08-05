@@ -21,6 +21,25 @@ Feature: First feature
 
 
   Scenario:
+    When I send a POST request to "/api/fail/user" with body:
+    """
+    {
+        "name": "morpheus",
+        "job": "leader"
+    }
+    """
+    Then the response code should be 400
+    And the JSON should match pattern
+    """
+    {
+        "name": "@string@",
+        "error": true,
+        "message": "@string@"
+    }
+    """
+
+
+  Scenario:
     When I send a POST request to "/api/users" with body:
     """
     {

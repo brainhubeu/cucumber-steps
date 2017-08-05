@@ -10,30 +10,39 @@ var _Response2 = _interopRequireDefault(_Response);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+const METHOD = {
+  GET: 'get',
+  POST: 'post',
+  PUT: 'put',
+  PATCH: 'patch',
+  DELETE: 'del'
+};
+
 class Client {
   constructor(superagent) {
     this.superagent = superagent;
     this.headers = {};
+
+    Object.keys(METHOD).forEach(methodKey => {
+      const method = METHOD[methodKey];
+      this[methodKey.toLowerCase()] = (path, body) => {
+        return this.createRequest(method, path, body);
+      };
+    });
   }
 
   setHost(host) {
     this.host = host;
   }
 
-  get(path) {
-    const request = this.superagent.get(this.host + path);
+  createRequest(method, path, body) {
+    const request = this.superagent[method.toLowerCase()](this.host + path);
 
     this.addRequestHeaders(request);
 
-    return request.then(({ body, status }) => new _Response2.default(body, status));
-  }
+    const createdRequest = method.toLowerCase() !== 'get' ? request.send(body) : request;
 
-  post(path, body) {
-    const request = this.superagent.post(this.host + path);
-
-    this.addRequestHeaders(request);
-
-    return request.send(body).then(({ body, status }) => new _Response2.default(body, status));
+    return createdRequest.then(({ body, status }) => new _Response2.default(body, status)).catch(({ response: { body }, status }) => new _Response2.default(body, status));
   }
 
   addRequestHeaders(request) {
