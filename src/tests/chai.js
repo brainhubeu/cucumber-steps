@@ -1,10 +1,8 @@
 import chai, { expect } from 'chai';
-import like from 'chai-like';
+import chaiJsonPattern from 'chai-json-pattern';
 import sinonChai from 'sinon-chai';
-import matcherPlugin from './matcherPlugin';
 
 chai.use(sinonChai);
-chai.use(like);
-like.extend(matcherPlugin);
+chai.use(chaiJsonPattern);
 
 export { expect };

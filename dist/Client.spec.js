@@ -28,32 +28,12 @@ describe('Client', () => {
     client.setHost('http://example.com');
 
     return client.get('/custom-path').then(response => {
-      (0, _chai.expect)(response.body).to.be.like({
-        property: 'value'
-      });
+      (0, _chai.expect)(response.body).to.matchPattern(`
+            {
+              "property": "value",
+            }
+          `);
       (0, _chai.expect)(response.status).to.be.equal(200);
-    });
-  });
-
-  it('makes a failing GET request', () => {
-    const superagent = {
-      get: _sinon2.default.stub()
-    };
-    superagent.get.withArgs('http://example.com/custom-path').returns(Promise.reject({
-      body: {
-        name: 'Bad request'
-      },
-      status: 400
-    }));
-
-    const client = new _Client2.default(superagent);
-    client.setHost('http://example.com');
-
-    return client.get('/custom-path').then(response => {
-      (0, _chai.expect)(response.body).to.be.like({
-        name: 'Bad request'
-      });
-      (0, _chai.expect)(response.status).to.be.equal(400);
     });
   });
 
@@ -82,9 +62,11 @@ describe('Client', () => {
     client.setHost('http://example.com');
 
     return client.post('/custom-path', body).then(response => {
-      (0, _chai.expect)(response.body).to.be.like({
-        property: 'value'
-      });
+      (0, _chai.expect)(response.body).to.matchPattern(`
+            {
+              "property": "value",
+            }
+          `);
       (0, _chai.expect)(response.status).to.be.equal(201);
     });
   });

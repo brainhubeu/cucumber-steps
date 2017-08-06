@@ -7,12 +7,11 @@ const INDENT = '    ';
  * @return {Boolean} validates if expectation is fulfilled
  */
 export default function(pattern) {
-  const json = JSON.parse(pattern);
-  const message = `Expect response body to match pattern:
-  ${pattern}
-  but the response body is: 
-  ${JSON.stringify(this.lastResponse.body, null, INDENT)}
-  `;
+  // const message = `Expect response body to match pattern:
+  // ${pattern}
+  // but the response body is: 
+  // ${JSON.stringify(this.lastResponse.body, null, INDENT)}
+  // `;
 
-  return expect(this.lastResponse.body, message).to.be.like(json);
+  return expect(this.lastResponse.body).to.matchPattern(pattern);
 }

@@ -32,9 +32,9 @@ Feature: First feature
     And the JSON should match pattern
     """
     {
-        "name": "@string@",
+        "name": isString,
         "error": true,
-        "message": "@string@"
+        "message": isString
     }
     """
 
@@ -53,9 +53,9 @@ Feature: First feature
     {
         "name": "morpheus",
         "job": "leader",
-        "id": "@integer@",
-        "age": "@integer@",
-        "createdAt": "@date@"
+        "id": isString,
+        "age": number,
+        "createdAt": isDate OR isString
     }
     """
 
@@ -65,6 +65,7 @@ Feature: First feature
     Then the JSON should match pattern
     """
     {
-      "content-type": "application/text"
+      "content-type": "application/text",
+      ...
     }
     """

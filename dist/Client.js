@@ -42,7 +42,7 @@ class Client {
 
     const createdRequest = method.toLowerCase() !== 'get' ? request.send(body) : request;
 
-    return createdRequest.then(({ body, status }) => new _Response2.default(body, status)).catch(({ response: { body }, status }) => new _Response2.default(body, status));
+    return createdRequest.then(({ body, status }) => new _Response2.default(body, status), ({ response: { body, status } }) => new _Response2.default(body, status));
   }
 
   addRequestHeaders(request) {
