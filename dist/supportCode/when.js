@@ -5,8 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function ({ When }) {
-  When('I send a {string} request to {stringInDoubleQuotes}', _sendRequestTo2.default);
-  When('I send a {string} request to {stringInDoubleQuotes} with body:', _sendRequestToWithBody2.default);
+  When('I send a {string} request to {string}', _sendRequestTo2.default);
+  When('I send a {string} request to {string} with body:', _sendRequestToWithBody2.default);
 };
 
 var _sendRequestTo = require('../support/action/sendRequestTo');
