@@ -21,6 +21,25 @@ Feature: First feature
 
 
   Scenario:
+    When I send a POST request to "/api/fail/user" with body:
+    """
+    {
+        "name": "morpheus",
+        "job": "leader"
+    }
+    """
+    Then the response code should be 400
+    And the JSON should match pattern
+    """
+    {
+        "name": String,
+        "error": true,
+        "message": String
+    }
+    """
+
+
+  Scenario:
     When I send a POST request to "/api/users" with body:
     """
     {
@@ -34,18 +53,19 @@ Feature: First feature
     {
         "name": "morpheus",
         "job": "leader",
-        "id": "@integer@",
-        "age": "@integer@",
-        "createdAt": "@date@"
+        "id": String,
+        "age": Number,
+        "createdAt": Date OR String
     }
     """
 
   Scenario:
-    Given I set header Content-Type with value "application/text"
+    Given I set header "Content-Type" with value "application/text"
     When I send a GET request to "/header"
     Then the JSON should match pattern
     """
     {
-      "content-type": "application/text"
+      "content-type": "application/text",
+      ...
     }
     """

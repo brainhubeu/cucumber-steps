@@ -28,9 +28,11 @@ describe('Client', () => {
     client.setHost('http://example.com');
 
     return client.get('/custom-path').then(response => {
-      (0, _chai.expect)(response.body).to.be.like({
-        property: 'value'
-      });
+      (0, _chai.expect)(response.body).to.matchPattern(`
+            {
+              "property": "value",
+            }
+          `);
       (0, _chai.expect)(response.status).to.be.equal(200);
     });
   });
@@ -60,9 +62,11 @@ describe('Client', () => {
     client.setHost('http://example.com');
 
     return client.post('/custom-path', body).then(response => {
-      (0, _chai.expect)(response.body).to.be.like({
-        property: 'value'
-      });
+      (0, _chai.expect)(response.body).to.matchPattern(`
+            {
+              "property": "value",
+            }
+          `);
       (0, _chai.expect)(response.status).to.be.equal(201);
     });
   });

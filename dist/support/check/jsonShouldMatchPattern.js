@@ -5,14 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (pattern) {
-  const json = JSON.parse(pattern);
-  const message = `Expect response body to match pattern:
-  ${pattern}
-  but the response body is: 
-  ${JSON.stringify(this.lastResponse.body, null, INDENT)}
-  `;
+  // const message = `Expect response body to match pattern:
+  // ${pattern}
+  // but the response body is: 
+  // ${JSON.stringify(this.lastResponse.body, null, INDENT)}
+  // `;
 
-  return (0, _chai.expect)(this.lastResponse.body, message).to.be.like(json);
+  return (0, _chai.expect)(this.lastResponse.body).to.matchPattern(pattern);
 };
 
 var _chai = require('../../tests/chai');

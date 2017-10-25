@@ -25,6 +25,14 @@ export default new Promise(resolve => {
           createdAt: new Date(),
         });
     })
+    .post('/api/fail/user', (req, res) => {
+      res.status(400)
+        .json({
+          name: req.body.name,
+          error: true,
+          message: 'You did sth wrong',
+        });
+    })
     .get('/header', (req, res) => {
       res.json(req.headers);
     })

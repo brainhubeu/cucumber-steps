@@ -21,9 +21,13 @@ describe('Client', () => {
 
     return client.get('/custom-path')
       .then(response => {
-        expect(response.body).to.be.like({
-          property: 'value',
-        });
+        expect(response.body).to.matchPattern(
+          `
+            {
+              "property": "value",
+            }
+          `
+        );
         expect(response.status).to.be.equal(200);
       });
   });
@@ -56,9 +60,13 @@ describe('Client', () => {
 
     return client.post('/custom-path', body)
       .then(response => {
-        expect(response.body).to.be.like({
-          property: 'value',
-        });
+        expect(response.body).to.matchPattern(
+          `
+            {
+              "property": "value",
+            }
+          `
+        );
         expect(response.status).to.be.equal(201);
       });
   });
