@@ -32,9 +32,9 @@ Feature: First feature
     And the JSON should match pattern
     """
     {
-        "name": isString,
+        "name": String,
         "error": true,
-        "message": isString
+        "message": String
     }
     """
 
@@ -53,14 +53,14 @@ Feature: First feature
     {
         "name": "morpheus",
         "job": "leader",
-        "id": isString,
-        "age": number,
-        "createdAt": isDate OR isString
+        "id": String,
+        "age": Number,
+        "createdAt": Date OR String
     }
     """
 
   Scenario:
-    Given I set header Content-Type with value "application/text"
+    Given I set header "Content-Type" with value "application/text"
     When I send a GET request to "/header"
     Then the JSON should match pattern
     """
