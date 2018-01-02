@@ -5,7 +5,7 @@ Feature: First feature
   In order to test my API with CucumberJS
 
   Scenario:
-    When I send a GET request to "/api/users/2"
+    When I send a "GET" request to "/api/users/2"
     Then the response code should be 200
     And the JSON should match pattern
     """
@@ -21,7 +21,7 @@ Feature: First feature
 
 
   Scenario:
-    When I send a POST request to "/api/fail/user" with body:
+    When I send a "POST" request to "/api/fail/user" with body:
     """
     {
         "name": "morpheus",
@@ -40,7 +40,7 @@ Feature: First feature
 
 
   Scenario:
-    When I send a POST request to "/api/users" with body:
+    When I send a "POST" request to "/api/users" with body:
     """
     {
         "name": "morpheus",
@@ -61,7 +61,7 @@ Feature: First feature
 
   Scenario:
     Given I set header "Content-Type" with value "application/text"
-    When I send a GET request to "/header"
+    When I send a "GET" request to "/header"
     Then the JSON should match pattern
     """
     {

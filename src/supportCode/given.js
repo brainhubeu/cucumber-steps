@@ -1,5 +1,5 @@
 import setHeaderWithValue from '../support/action/setHeaderWithValue';
 
 export default function({ Given }) {
-  Given('I set header {stringInDoubleQuotes} with value {stringInDoubleQuotes}', setHeaderWithValue);
+  Given('I set header {string} with value {string}', setHeaderWithValue);
 }

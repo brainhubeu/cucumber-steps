@@ -20,12 +20,12 @@ Given I set header "heder-name" with value "header-value"
 
 #### Sending request
 ```
-When I send a METHOD request to "/path"
+When I send a "METHOD" request to "/path"
 ```
 
 #### Sending request with body
 ```
-When I send a METHOD request to "/path" with body:
+When I send a "METHOD" request to "/path" with body:
   """
   {
     "name": "Wonderful coffee",

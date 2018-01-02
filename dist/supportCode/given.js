@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function ({ Given }) {
-  Given('I set header {stringInDoubleQuotes} with value {stringInDoubleQuotes}', _setHeaderWithValue2.default);
+  Given('I set header {string} with value {string}', _setHeaderWithValue2.default);
 };
 
 var _setHeaderWithValue = require('../support/action/setHeaderWithValue');

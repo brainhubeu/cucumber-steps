@@ -1,6 +1,6 @@
 {
   "name": "cucumber-steps",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Quick start for testing with cucumber",
   "main": "dist/main.js",
   "scripts": {
@@ -36,15 +36,17 @@
     "url": "https://github.com/brainhubeu/cucumber-steps/issues"
   },
   "homepage": "https://github.com/brainhubeu/cucumber-steps#readme",
+  "dependencies": {
+    "chai-json-pattern": "^1.0.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-register": "^6.24.1",
     "body-parser": "^1.17.2",
     "chai": "^4.0.2",
-    "chai-json-pattern": "^1.0.0",
     "chai-like": "^0.2.14",
-    "cucumber": "^2.3.1",
+    "cucumber": "^3.0.6",
     "eslint": "^4.1.1",
     "eslint-config-brainhub": "^1.5.0",
     "eslint-plugin-cucumber": "^0.1.0",
