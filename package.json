@@ -1,6 +1,6 @@
 {
   "name": "cucumber-steps",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Quick start for testing with cucumber",
   "main": "dist/main.js",
   "scripts": {
