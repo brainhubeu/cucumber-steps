@@ -1,0 +1,41 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.11
+
+    steps:
+      - checkout
+      - run: yarn install --non-interactive
+      # TODO fix lint and lint check here
+      - run: yarn test
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
+
+  deploy_package:
+    docker:
+      - image: circleci/node:8.11
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: npm publish
+          command: |
+            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+            npm publish
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy_package:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
