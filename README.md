@@ -3,12 +3,15 @@ Quick start for testing with cucumber
 
 # Getting started
 Install library
-`npm i --save-dev https://github.com/brainhubeu/cucumber-steps`
+
+with npm: `npm i --save-dev @brainhubeu/cucumber-steps`
+
+or with yarn: `yarn add --dev @brainhubeu/cucumber-steps`
 
 Add following in anywhere in your `step-definitions` directory
 ```
 import { defineSupportCode } from 'cucumber';
-import stepsSupport from 'cucumber-steps';
+import stepsSupport from '@brainhubeu/cucumber-steps';
 
 defineSupportCode(stepsSupport);
 ```
