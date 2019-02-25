@@ -8,7 +8,7 @@
     "build": "babel src/ -d dist/",
     "lint": "./node_modules/.bin/eslint features/ src/",
     "lint-fix": "eslint features/ src/ --fix",
-    "test": "./node_modules/.bin/mocha -r babel-register src/**.spec.js && ./node_modules/.bin/cucumber-js --require-module @babel/register"
+    "test": "./node_modules/.bin/mocha -r babel-register src/**.spec.js && ./node_modules/.bin/cucumber-js --require-module @babel/register --exit"
   },
   "author": {
     "name": "Brainhub"
