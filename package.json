@@ -8,7 +8,7 @@
     "build": "babel src/ -d dist/",
     "lint": "./node_modules/.bin/eslint features/ src/",
     "lint-fix": "eslint features/ src/ --fix",
-    "test": "./node_modules/.bin/mocha -r babel-register src/**.spec.js && ./node_modules/.bin/cucumberjs --compiler=js:babel-register"
+    "test": "./node_modules/.bin/mocha -r babel-register src/**.spec.js && ./node_modules/.bin/cucumber-js --require-module @babel/register"
   },
   "author": {
     "name": "Brainhub"
@@ -40,6 +40,8 @@
     "chai-json-pattern": "^1.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/register": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-register": "^6.26.0",
