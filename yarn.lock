@@ -230,10 +230,10 @@
   resolved "https://registry.npmjs.org/@sinonjs/text-encoding/-/text-encoding-0.7.1.tgz#8da5c6530915653f3a1f38fd5f101d8c3f8079c5"
   integrity sha512-+iTbntw2IZPb/anVDbypzfQa+ay64MW0Zo8aJ8gZPWMMK6/OubMVb6lUPMagqjOPnmtauXnFCACVl3O7ogjeqQ==
 
-"@wdio/config@^5.9.4":
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.9.4.tgz#f8b992d421b9311842facffd5c17da4b1573c7c7"
-  integrity sha512-wlQJJfXwR28xktsXpOC7s/+fWcLAKhIB6s6slCREm3RvcJBfJ9pM4z9lrBRAiawvI4bpNBl8EdUZrRwCtGlkJQ==
+"@wdio/config@^5.10.8":
+  version "5.10.8"
+  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.10.8.tgz#247e971548f20989a98938501a9318bf52a6ce4f"
+  integrity sha512-991t0lXvqB6odM84Ck9rAoFoCE/sqQV2QAQtGtj9eliVUEKIBiA+MK522X85JAEkz7OO1rup+sxdMqF+gQHqsQ==
   dependencies:
     "@wdio/logger" "^5.9.3"
     deepmerge "^3.2.0"
@@ -249,12 +249,12 @@
     loglevel-plugin-prefix "^0.8.4"
     strip-ansi "^5.2.0"
 
-"@wdio/repl@^5.9.4":
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/@wdio/repl/-/repl-5.9.4.tgz#a786c9c8f98a71faf604d268029569e5111d7b4f"
-  integrity sha512-PMpBB8+6uCVgP1D4iLnINKX9fTmQqX5DSnwtiTC90NYYmU3lNcZgt5NBJFfK6tRPu6cQyU3CeG8yXrf1e+9e5A==
+"@wdio/repl@^5.10.8":
+  version "5.10.8"
+  resolved "https://registry.yarnpkg.com/@wdio/repl/-/repl-5.10.8.tgz#681648b142a59b7c8db411ab630a84987f9866cc"
+  integrity sha512-fLR8ct5vY3LCji6QXvCJRZxrejLLgnMAt76Or6Mm9Lb3WmdgkO/tayPL1mYi/QsYPqbPaFgawnQn6CgHwZasVw==
   dependencies:
-    "@wdio/config" "^5.9.4"
+    "@wdio/config" "^5.10.8"
 
 abbrev@1:
   version "1.1.1"
@@ -1480,10 +1480,10 @@ eslint-visitor-keys@^1.0.0:
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
   integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
 
-eslint@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.0.0.tgz#9223f19223de73b4ed730e11bff44a376b65844d"
-  integrity sha512-SrrIfcd4tOgsspOKTSwamuTOAMZOUigHQhVMrzNjz4/B9Za6SHQDIocMIyIDfwDgx6MhS15nS6HC8kumCV2qBQ==
+eslint@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.0.1.tgz#4a32181d72cb999d6f54151df7d337131f81cda7"
+  integrity sha512-DyQRaMmORQ+JsWShYsSg4OPTjY56u1nCjAmICrE8vLWqyLKxhFXOthwMj1SA8xwfrv0CofLNVnqbfyhwCkaO0w==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -4523,25 +4523,25 @@ verror@1.10.0, verror@^1.9.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-webdriver@^5.10.4:
-  version "5.10.4"
-  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.10.4.tgz#ecfa464a95445fefeb645259ebad1ed00d214649"
-  integrity sha512-JIlHdKCWhS7cPwP3y3+OEWy1coUjGr7U8o8WeQfQbCxlO8163djeW5R2/dr78FqQxBAGQhFWiGU4qDagL9cboA==
+webdriver@^5.10.9:
+  version "5.10.9"
+  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.10.9.tgz#25d511e39288201328359a22eb602a519e5816df"
+  integrity sha512-TbkCNY5/bS7rXf8T2LHVs5y7HI7D6zr38WLDMUegU4Ubb1j+Vst7rS1iShNO1fRaARi10CLJydZ5xF40NHgNtQ==
   dependencies:
-    "@wdio/config" "^5.9.4"
+    "@wdio/config" "^5.10.8"
     "@wdio/logger" "^5.9.3"
     deepmerge "^3.2.0"
     lodash.merge "^4.6.1"
     request "^2.83.0"
 
-webdriverio@^5.10.7:
-  version "5.10.7"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.10.7.tgz#a39c1a56918577fbc4131bd42487b71f7f3a0825"
-  integrity sha512-1LsxZafQJMuY4bmKEGM6Ljb9ZcYoD0rSy4bNWb1D5N1K998jbfeb9zIk06tNylOZKVI0s47M57u7E3M7KCSBWg==
+webdriverio@^5.10.9:
+  version "5.10.9"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.10.9.tgz#1f23b9772851970226563891d903d82847d089d0"
+  integrity sha512-7E/uRDDNXpL2kp9MOU8krBItUqyexV5/ryIxu2t8eUleayPPawcp9r+sgB/SGv7+l3HIAV+o20W84+P8SAcZIg==
   dependencies:
-    "@wdio/config" "^5.9.4"
+    "@wdio/config" "^5.10.8"
     "@wdio/logger" "^5.9.3"
-    "@wdio/repl" "^5.9.4"
+    "@wdio/repl" "^5.10.8"
     css-value "^0.0.1"
     grapheme-splitter "^1.0.2"
     lodash.isobject "^3.0.2"
@@ -4551,7 +4551,7 @@ webdriverio@^5.10.7:
     resq "^1.5.0"
     rgb2hex "^0.1.0"
     serialize-error "^4.1.0"
-    webdriver "^5.10.4"
+    webdriver "^5.10.9"
 
 which-module@^2.0.0:
   version "2.0.0"
