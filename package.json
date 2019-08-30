@@ -1,6 +1,6 @@
 {
   "name": "@brainhubeu/cucumber-steps",
-  "version": "1.6.22",
+  "version": "1.6.23",
   "description": "Quick start for testing with cucumber",
   "main": "dist/main.js",
   "scripts": {
@@ -49,16 +49,16 @@
     "chai": "^4.2.0",
     "chai-like": "^1.1.1",
     "cucumber": "^5.1.0",
-    "eslint": "^6.2.1",
+    "eslint": "^6.3.0",
     "eslint-config-brainhub": "^1.11.0",
     "eslint-plugin-cucumber": "^1.2.0",
-    "eslint-plugin-mocha": "^6.0.0",
+    "eslint-plugin-mocha": "^6.1.0",
     "express": "^4.17.1",
     "mocha": "^6.2.0",
     "selenium-standalone": "^6.16.0",
     "sinon": "^7.4.1",
     "sinon-chai": "^3.3.0",
     "superagent": "^5.1.0",
-    "webdriverio": "^5.12.4"
+    "webdriverio": "^5.12.5"
   }
 }
