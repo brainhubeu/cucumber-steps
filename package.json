@@ -1,6 +1,6 @@
 {
   "name": "@brainhubeu/cucumber-steps",
-  "version": "1.6.26",
+  "version": "1.6.27",
   "description": "Quick start for testing with cucumber",
   "main": "dist/main.js",
   "scripts": {
@@ -54,7 +54,7 @@
     "eslint-plugin-cucumber": "^1.2.0",
     "eslint-plugin-mocha": "^6.1.1",
     "express": "^4.17.1",
-    "mocha": "^6.2.0",
+    "mocha": "^6.2.1",
     "selenium-standalone": "^6.16.0",
     "sinon": "^7.5.0",
     "sinon-chai": "^3.3.0",
