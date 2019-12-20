@@ -16,15 +16,15 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@^7.7.5":
-  version "7.7.5"
-  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.7.5.tgz#ae1323cd035b5160293307f50647e83f8ba62f7e"
-  integrity sha512-M42+ScN4+1S9iB6f+TL7QBpoQETxbclx+KNoKJABghnKYE+fMzSGqst0BZJc8CpI625bwPwYgUyRvxZ+0mZzpw==
+"@babel/core@^7.7.7":
+  version "7.7.7"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.7.7.tgz#ee155d2e12300bcc0cff6a8ad46f2af5063803e9"
+  integrity sha512-jlSjuj/7z138NLZALxVgrx13AOtqip42ATZP7+kYl53GvDV6+4dCek1mVUo8z8c8Xnw/mx2q3d9HWh3griuesQ==
   dependencies:
     "@babel/code-frame" "^7.5.5"
-    "@babel/generator" "^7.7.4"
+    "@babel/generator" "^7.7.7"
     "@babel/helpers" "^7.7.4"
-    "@babel/parser" "^7.7.5"
+    "@babel/parser" "^7.7.7"
     "@babel/template" "^7.7.4"
     "@babel/traverse" "^7.7.4"
     "@babel/types" "^7.7.4"
@@ -40,6 +40,16 @@
   version "7.7.4"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.7.4.tgz#db651e2840ca9aa66f327dcec1dc5f5fa9611369"
   integrity sha512-m5qo2WgdOJeyYngKImbkyQrnUN1mPceaG5BV+G0E3gWsa4l/jCSryWJdM2x8OuGAOyh+3d5pVYfZWCiNFtynxg==
+  dependencies:
+    "@babel/types" "^7.7.4"
+    jsesc "^2.5.1"
+    lodash "^4.17.13"
+    source-map "^0.5.0"
+
+"@babel/generator@^7.7.7":
+  version "7.7.7"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.7.7.tgz#859ac733c44c74148e1a72980a64ec84b85f4f45"
+  integrity sha512-/AOIBpHh/JU1l0ZFS4kiRCBnLi6OTHzh0RPk3h9isBxkkqELtQNFi1Vr/tiG9p1yfoUdKVwISuXWQR+hwwM4VQ==
   dependencies:
     "@babel/types" "^7.7.4"
     jsesc "^2.5.1"
@@ -92,15 +102,15 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.7.4.tgz#75ab2d7110c2cf2fa949959afb05fa346d2231bb"
   integrity sha512-jIwvLO0zCL+O/LmEJQjWA75MQTWwx3c3u2JOTDK5D3/9egrWRRA0/0hk9XXywYnXZVVpzrBYeIQTmhwUaePI9g==
 
-"@babel/parser@^7.7.5":
-  version "7.7.5"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.7.5.tgz#cbf45321619ac12d83363fcf9c94bb67fa646d71"
-  integrity sha512-KNlOe9+/nk4i29g0VXgl8PEXIRms5xKLJeuZ6UptN0fHv+jDiriG+y94X6qAgWTR0h3KaoM1wK5G5h7MHFRSig==
+"@babel/parser@^7.7.7":
+  version "7.7.7"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.7.7.tgz#1b886595419cf92d811316d5b715a53ff38b4937"
+  integrity sha512-WtTZMZAZLbeymhkd/sEaPD8IQyGAhmuTuvTzLiCFM7iXiVdY0gc0IaI+cW0fh1BnSMbJSzXX6/fHllgHKwHhXw==
 
-"@babel/register@^7.7.4":
-  version "7.7.4"
-  resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.7.4.tgz#45a4956471a9df3b012b747f5781cc084ee8f128"
-  integrity sha512-/fmONZqL6ZMl9KJUYajetCrID6m0xmL4odX7v+Xvoxcv0DdbP/oO0TWIeLUCHqczQ6L6njDMqmqHFy2cp3FFsA==
+"@babel/register@^7.7.7":
+  version "7.7.7"
+  resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.7.7.tgz#46910c4d1926b9c6096421b23d1f9e159c1dcee1"
+  integrity sha512-S2mv9a5dc2pcpg/ConlKZx/6wXaEwHeqfo7x/QbXsdCAZm+WJC1ekVvL1TVxNsedTs5y/gG63MhJTEsmwmjtiA==
   dependencies:
     find-cache-dir "^2.0.0"
     lodash "^4.17.13"
@@ -213,10 +223,10 @@
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
 
-"@wdio/config@5.16.11":
-  version "5.16.11"
-  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.16.11.tgz#2f2c58e4a50ab3fc9251f2ea8ec64c86d4266e5c"
-  integrity sha512-fGa7gDTyzzs28QIkJGPqG2ocgOvHBUanSDan4pw1pX7y1yJtPI0Nc3hkfxB6u/MqsW67GXCNMRyOS9Ri1I912A==
+"@wdio/config@5.18.0":
+  version "5.18.0"
+  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.18.0.tgz#677d20b81bdd60fd4bf5fbdb0dac0edae3483f3b"
+  integrity sha512-RjKuqxe3fDDRPev/UuV++IkqQbCrBXow1DDND8RNdjkSIaQmg0+6j9fxvadUviR1PpDprsGSdpB6kltd3ILzcw==
   dependencies:
     "@wdio/logger" "5.16.10"
     deepmerge "^4.0.0"
@@ -1527,10 +1537,10 @@ escape-string-regexp@^2.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-2.0.0.tgz#a30304e99daa32e23b2fd20f51babd07cffca344"
   integrity sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
 
-eslint-config-brainhub@^1.11.1:
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-brainhub/-/eslint-config-brainhub-1.11.1.tgz#f6f6ebf0f984128f4a5f0d7c5a85dd5c96c9215a"
-  integrity sha512-yoO1E/Wvxp9VUX5SmIcDZYKTMqNnD5qbjSdwyrHr0s8g3aakya2SWA95OdlDN4+ir9pFfBKeuOkojsjqQ+2MDA==
+eslint-config-brainhub@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-brainhub/-/eslint-config-brainhub-1.12.0.tgz#40ec8809f1b017f51904b5a4197aebf4bb3872aa"
+  integrity sha512-cM5WlzK4bXVw/+iDo2aZTxjuypBtU/6Kol/xCrLHikT8V5/MXvQCfbb8I0xBKJ953UqWfFLC3VMVXZ1sC7a6bA==
   dependencies:
     eslint-plugin-babel "^5.3.0"
     eslint-plugin-import "^2.16.0"
@@ -1627,10 +1637,10 @@ eslint-visitor-keys@^1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
-eslint@^6.7.2:
-  version "6.7.2"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.7.2.tgz#c17707ca4ad7b2d8af986a33feba71e18a9fecd1"
-  integrity sha512-qMlSWJaCSxDFr8fBPvJM9kJwbazrhNcBU3+DszDW1OlEwKBBRWsJc7NJFelvwQpanHCR14cOLD41x8Eqvo3Nng==
+eslint@^6.8.0:
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.8.0.tgz#62262d6729739f9275723824302fb227c8c93ffb"
+  integrity sha512-K+Iayyo2LtyYhDSYwz5D5QdWw0hCacNzyq1Y821Xna2xSJj7cijoLLYmLxTQgcgZ9mC61nryMy9S7GRbYpI5Ig==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -4370,10 +4380,10 @@ strip-json-comments@^3.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.0.1.tgz#85713975a91fb87bf1b305cca77395e40d2a64a7"
   integrity sha512-VTyMAUfdm047mwKl+u79WIdrZxtFtn+nBxHeb844XBQ9uMNTuTHdx2hc5RiAJYqwTj3wc/xe5HLSdJSkJ+WfZw==
 
-superagent@^5.1.2:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/superagent/-/superagent-5.1.2.tgz#b122f3a62b14c4d638612667033a7eb43c4f4d83"
-  integrity sha512-VwPCbi9H02qDtTbdY+e3+cK5XR0YHsJy9hmeCOXLQ8ezjq8+S1Bs4MdNRmpmf2QjDBetD7drG7/nEta7E3E6Sg==
+superagent@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/superagent/-/superagent-5.1.3.tgz#9502db541559d3d9e7acfa30f70d1186c0faa88d"
+  integrity sha512-2bno1Nb4uvZPECTJ7NDYlae6Q8LLQoZZZ9Vumd346jU1UGVkNC/lQI42jHwtrqVoepyt0QxNKFty01IRKgD4CA==
   dependencies:
     component-emitter "^1.3.0"
     cookiejar "^2.1.2"
@@ -4716,24 +4726,24 @@ verror@1.10.0, verror@^1.9.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-webdriver@5.16.15:
-  version "5.16.15"
-  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.16.15.tgz#605ba0c25632ae54b030eb36e1ba816ae737527f"
-  integrity sha512-jR632i8Wt0O1yQzFVmv3pbCiGxtBpaA8Q+RD79yFlZVvqAgZDhGZEQj/5xYsbnXNZCmTjnGlmLi4FDH8u+jXCg==
+webdriver@5.18.0:
+  version "5.18.0"
+  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.18.0.tgz#e9b9ec70642c0c279aa9f569316262cff0ce9ab6"
+  integrity sha512-sDu5sHHuKdt3lpwpwKTuK4RQqX392y9bN5bs/ZyEwwMnz2O1VCxH7KKfkmPN6a/Yq83zF8ESxAx5lBK8NvnVEg==
   dependencies:
-    "@wdio/config" "5.16.11"
+    "@wdio/config" "5.18.0"
     "@wdio/logger" "5.16.10"
     "@wdio/protocols" "5.16.7"
     "@wdio/utils" "5.16.15"
     lodash.merge "^4.6.1"
     request "^2.83.0"
 
-webdriverio@^5.16.15:
-  version "5.16.15"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.16.15.tgz#1bb577dfc96f3fa8cbbc34c13fc8cf3623d689e0"
-  integrity sha512-Sm2vpahcFPlVJIT9XoUPsXJGV2jEeebIIGaBAjTUXmOf3aS/12oClPCCcn1AgJ+muhPNbdK7ULkTGEmBFC1XUA==
+webdriverio@^5.18.0:
+  version "5.18.0"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.18.0.tgz#c37475bb6e3cb7d8ee793db162d8e4ac621d4ff5"
+  integrity sha512-qXgfpeDKPhWIWligsaDbassSTeNYTjQwslN8RyaxnBhc8lJzl/sVrAmUToyGHrwWQZvi9gaayqJmyDf23nj5lA==
   dependencies:
-    "@wdio/config" "5.16.11"
+    "@wdio/config" "5.18.0"
     "@wdio/logger" "5.16.10"
     "@wdio/repl" "5.16.15"
     "@wdio/utils" "5.16.15"
@@ -4747,7 +4757,7 @@ webdriverio@^5.16.15:
     resq "^1.6.0"
     rgb2hex "^0.1.0"
     serialize-error "^5.0.0"
-    webdriver "5.16.15"
+    webdriver "5.18.0"
 
 which-module@^2.0.0:
   version "2.0.0"
