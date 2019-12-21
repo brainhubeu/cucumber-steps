@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8.16
+      - image: circleci/node:8.17
 
     steps:
       - checkout
@@ -16,7 +16,7 @@ jobs:
 
   deploy_package:
     docker:
-      - image: circleci/node:8.16
+      - image: circleci/node:8.17
     steps:
       - checkout
       - attach_workspace:
