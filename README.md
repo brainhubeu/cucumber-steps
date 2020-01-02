@@ -13,7 +13,7 @@ with npm: `npm i --save-dev @brainhubeu/cucumber-steps`
 or with yarn: `yarn add --dev @brainhubeu/cucumber-steps`
 
 Add following in anywhere in your `step-definitions` directory
-```
+```js
 import { defineSupportCode } from 'cucumber';
 import stepsSupport from '@brainhubeu/cucumber-steps';
 
