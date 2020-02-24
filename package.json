@@ -1,6 +1,6 @@
 {
   "name": "@brainhubeu/cucumber-steps",
-  "version": "1.6.55",
+  "version": "1.6.56",
   "description": "Quick start for testing with cucumber",
   "main": "dist/main.js",
   "scripts": {
@@ -56,7 +56,7 @@
     "express": "^4.17.1",
     "mocha": "^7.0.1",
     "selenium-standalone": "^6.17.0",
-    "sinon": "^8.1.1",
+    "sinon": "^9.0.0",
     "sinon-chai": "^3.5.0",
     "superagent": "^5.2.2",
     "webdriverio": "^5.18.7"
