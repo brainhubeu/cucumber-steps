@@ -1,6 +1,6 @@
 {
   "name": "@brainhubeu/cucumber-steps",
-  "version": "1.6.58",
+  "version": "1.6.59",
   "description": "Quick start for testing with cucumber",
   "main": "dist/main.js",
   "scripts": {
@@ -40,8 +40,8 @@
     "chai-json-pattern": "^1.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/register": "^7.8.3",
+    "@babel/core": "^7.8.6",
+    "@babel/register": "^7.8.6",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-register": "^6.26.0",
