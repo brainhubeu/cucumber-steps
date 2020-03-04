@@ -8,5 +8,8 @@
     "major": {
       "enabled": true
     }
+  },
+  "node": {
+    "supportPolicy": ["lts_latest"]
   }
 }
