@@ -8,7 +8,7 @@ Quick start for testing with cucumber
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 
 [![Downloads](https://img.shields.io/npm/dm/@brainhubeu/cucumber-steps?color=blue)](https://www.npmjs.com/package/@brainhubeu/cucumber-steps)
-[![Activity](https://img.shields.io/github/commit-activity/m/brainhubeu/cucumber-steps.svg)](https://img.shields.io/bundlephobia/min/@brainhubeu/cucumber-steps?label=minified)
+[![Activity](https://img.shields.io/github/commit-activity/m/brainhubeu/cucumber-steps.svg)](https://github.com/brainhubeu/cucumber-steps/commits/master)
 [![Minified](https://img.shields.io/bundlephobia/min/@brainhubeu/cucumber-steps?label=minified)](https://www.npmjs.com/package/@brainhubeu/cucumber-steps)
 [![npm](https://img.shields.io/npm/v/@brainhubeu/cucumber-steps.svg)](https://www.npmjs.com/package/@brainhubeu/cucumber-steps)
 [![Contributors](https://img.shields.io/github/contributors/brainhubeu/cucumber-steps?color=blue)](https://github.com/brainhubeu/cucumber-steps/graphs/contributors)
