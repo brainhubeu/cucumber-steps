@@ -1,6 +1,6 @@
 {
   "name": "@brainhubeu/cucumber-steps",
-  "version": "1.6.64",
+  "version": "1.6.69",
   "description": "Quick start for testing with cucumber",
   "main": "dist/main.js",
   "scripts": {
@@ -40,8 +40,8 @@
     "chai-json-pattern": "^1.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/register": "^7.8.6",
+    "@babel/core": "^7.9.0",
+    "@babel/register": "^7.9.0",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-register": "^6.26.0",
@@ -54,11 +54,11 @@
     "eslint-plugin-cucumber": "^1.4.0",
     "eslint-plugin-mocha": "^6.3.0",
     "express": "^4.17.1",
-    "mocha": "^7.1.0",
+    "mocha": "^7.1.1",
     "selenium-standalone": "^6.17.0",
-    "sinon": "^9.0.1",
+    "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0",
     "superagent": "^5.2.2",
-    "webdriverio": "^5.21.0"
+    "webdriverio": "^6.0.16"
   }
 }
