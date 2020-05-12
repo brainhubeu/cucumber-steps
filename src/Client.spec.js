@@ -1,5 +1,6 @@
-import Client from './Client';
 import sinon from 'sinon';
+
+import Client from './Client';
 import { expect } from './tests/chai';
 
 describe('Client', () => {
@@ -26,7 +27,7 @@ describe('Client', () => {
             {
               "property": "value",
             }
-          `
+          `,
         );
         expect(response.status).to.be.equal(200);
       });
@@ -65,7 +66,7 @@ describe('Client', () => {
             {
               "property": "value",
             }
-          `
+          `,
         );
         expect(response.status).to.be.equal(201);
       });
@@ -89,7 +90,7 @@ describe('Client', () => {
     client.setHeader('Accept', 'application/json');
 
     return client.get('/path')
-      .then(response => {
+      .then(() => {
         expect(request.set.withArgs('Accept', 'application/json')).to.have.been.calledOnce;
       });
   });
