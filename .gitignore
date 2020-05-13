@@ -68,3 +68,4 @@ typings/
 .DS_Store
 
 # Dist
+dist
