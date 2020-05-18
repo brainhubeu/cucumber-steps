@@ -8,7 +8,7 @@ defineSupportCode(function({ Before }) {
   Before(function() {
     return application.then(listener => {
       this.client = new Client(superagent);
-      this.client.setHost(`http://localhost:${ listener.address().port}`);
+      this.client.setHost(`http://localhost:${listener.address().port}`);
     });
   });
 });
