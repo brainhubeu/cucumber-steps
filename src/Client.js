@@ -15,9 +15,7 @@ export default class Client {
 
     Object.keys(METHOD).forEach(methodKey => {
       const method = METHOD[methodKey];
-      this[methodKey.toLowerCase()] = (path, body) => {
-        return this.createRequest(method, path, body);
-      };
+      this[methodKey.toLowerCase()] = (path, body) => this.createRequest(method, path, body);
     });
   }
 

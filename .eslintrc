@@ -7,6 +7,9 @@
   "extends": [
     "brainhub"
   ],
+  "plugins": [
+    "cucumber"
+  ],
   "settings": {
     "import/resolve": {
       "moduleDirectory": ["node_modules", "src"]
@@ -14,6 +17,10 @@
   },
   "rules": {
     "new-cap": ["error", { "capIsNewExceptions": ["Before", "Then", "Given", "When"] }],
-    "no-invalid-this": ["warn"]
+    "babel/no-invalid-this": "off",
+    "no-invalid-this": ["warn"],
+    "indent": ["error", 2, {
+      "ignoredNodes": ["TemplateLiteral"]
+    }]
   }
 }

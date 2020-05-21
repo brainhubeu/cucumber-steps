@@ -23,7 +23,7 @@ jobs:
     steps:
       - checkout
       - run: yarn install --non-interactive
-      # TODO fix lint and lint check here
+      - run: yarn lint
       - run: yarn test
       - persist_to_workspace:
           root: .
