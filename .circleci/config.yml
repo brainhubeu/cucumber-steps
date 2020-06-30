@@ -23,6 +23,7 @@ jobs:
     steps:
       - checkout
       - run: yarn install --non-interactive
+      - run: yarn danger ci --failOnErrors
       - run: yarn lint
       - run: yarn test
       - persist_to_workspace:
