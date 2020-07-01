@@ -2,7 +2,7 @@ version: 2
 jobs:
   check_branch_name:
     docker:
-      - image: circleci/node:12.16.2
+      - image: circleci/node:12.18.2
     working_directory: ~/app
     steps:
       - run:
@@ -18,7 +18,7 @@ jobs:
             fi
   test:
     docker:
-      - image: circleci/node:13.13
+      - image: circleci/node:13.14
 
     steps:
       - checkout
@@ -31,7 +31,7 @@ jobs:
             - node_modules
   deploy_package:
     docker:
-      - image: circleci/node:13.13
+      - image: circleci/node:13.14
     steps:
       - checkout
       - attach_workspace:
