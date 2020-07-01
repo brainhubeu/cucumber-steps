@@ -1,6 +1,6 @@
 {
   "name": "@brainhubeu/cucumber-steps",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "description": "Quick start for testing with cucumber",
   "main": "dist/main.js",
   "scripts": {
