@@ -1,6 +1,6 @@
 {
   "name": "@brainhubeu/cucumber-steps",
-  "version": "1.8.7",
+  "version": "1.8.8",
   "description": "Quick start for testing with cucumber",
   "main": "dist/main.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "selenium"
   ],
   "engines": {
-    "node": ">= 4"
+    "node": ">= 20.18.0"
   },
   "license": "MIT",
   "bugs": {
@@ -47,19 +47,19 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-register": "^6.26.0",
     "body-parser": "^1.19.0",
-    "chai": "^4.2.0",
+    "chai": "^5.1.2",
     "chai-like": "^1.1.1",
     "cucumber": "^6.0.5",
-    "eslint": "^7.3.1",
+    "eslint": "^9.13.0",
     "eslint-config-brainhub": "^1.13.0",
-    "eslint-plugin-cucumber": "^1.4.0",
-    "eslint-plugin-mocha": "^7.0.1",
+    "eslint-plugin-cucumber": "^2.0.0",
+    "eslint-plugin-mocha": "^10.5.0",
     "express": "^4.17.1",
-    "mocha": "^8.0.1",
-    "selenium-standalone": "^6.17.0",
-    "sinon": "^9.0.2",
-    "sinon-chai": "^3.5.0",
-    "superagent": "^5.3.1",
-    "webdriverio": "^6.1.22"
+    "mocha": "^10.7.3",
+    "selenium-standalone": "^10.0.0",
+    "sinon": "^19.0.2",
+    "sinon-chai": "^4.0.0",
+    "superagent": "^10.1.1",
+    "webdriverio": "^9.2.1"
   }
 }
